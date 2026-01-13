@@ -1,0 +1,16 @@
+# Force GitHub Linguist to treat Dart files as Dart
+*.dart linguist-language=Dart
+
+# Mark platform and build output folders as vendored so they are ignored
+android/** linguist-vendored
+ios/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+build/** linguist-vendored
+.gradle/** linguist-vendored
+pubspec.lock linguist-vendored
+**/generated/** linguist-vendored
+
+# Images and assets can skew language stats; mark them vendored as well
+images/** linguist-vendored
